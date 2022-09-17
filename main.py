@@ -7,20 +7,13 @@ CYAN='\033[36m'
 GREEN='\033[32m'
 MAGENTA='\033[35m'
 RED='\033[31m'
-print("Empezaremos en 5 segundos...")
-time.sleep(2)
-print("5")
-time.sleep(1)
-print("4")
-time.sleep(1)
-print("3")
-time.sleep(1)
-print("2")
-time.sleep(1)
-print("1")
+
 time.sleep(1)
 iniciartrivia=True
 intentos=0
+print(GREEN+"\nBienvenido a mi trivia sobre computación.")
+print("Pondremos a prueba tus conocimientos."+RESET)
+time.sleep(2)
 
 while iniciartrivia == True: #  Mientras iniciar_trivia sea True, repite:
   intentos += 1
@@ -29,9 +22,7 @@ while iniciartrivia == True: #  Mientras iniciar_trivia sea True, repite:
   input("Presiona Enter para continuar")
  
         
-  print(GREEN+"\nBienvenido a mi trivia sobre computación.")
-  print("Pondremos a prueba tus conocimientos."+RESET)
-  time.sleep(2)
+ 
   nombre = input(YELLOW+"\n¿Cuál es tu Nombre?: "+RESET)
   time.sleep(1)
   apellido = input(YELLOW+"¿Cuál es tu Apellido?: "+RESET)
